@@ -6,7 +6,7 @@ import "./about.css";
 
 const About = () => {
   /*
-<---------------------------- Useing Custom Hoook ---------------------------->
+<---------------------------- Using Custom Hoook ---------------------------->
 */
   const [courses] = useCourses();
   /*

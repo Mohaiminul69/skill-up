@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card } from "react-bootstrap";
+import { WishContext } from "../../App";
 
 const DetailsView = (props) => {
   const { courseProps } = props;
   const { name, img, intructor, duration, courseFee, details } = courseProps;
+  /*
+<---------------------------- Using Context API ---------------------------->
+*/
+  const wish = useContext(WishContext);
   return (
     <Card className="customCard w-50 mb-4">
       <Card.Img className={`bg-warning`} variant="top" src={img} />
@@ -30,6 +35,8 @@ const DetailsView = (props) => {
         <h5 className="mt-3 mb-2">Desciription</h5>
         <h6>{details}</h6>
         <button className="mt-3 btn btn-green">Purchase Course</button>
+        {/* <---------------------- Using Context API ----------------------> */}
+        <p className="text-muted mt-2">{wish}</p>
       </Card.Body>
     </Card>
   );

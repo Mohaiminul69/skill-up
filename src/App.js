@@ -9,40 +9,51 @@ import NotFound from "./Components/NotFound/NotFound";
 import "./App.css";
 import CourseDetails from "./Components/CourseDetails/CourseDetails";
 import Contact from "./Components/Contact/Contact";
+import { createContext } from "react";
+/*
+<---------------------------- Using Context API ---------------------------->
+*/
+export const WishContext = createContext("wish");
 
 function App() {
+  /*
+<---------------------------- Using Context API ---------------------------->
+*/
+  const wish = "Hope you will join us very soon !";
   return (
-    <div>
-      <Router>
-        <Nav />
-        <Container>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/home">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/courses/:courseId">
-              <CourseDetails />
-            </Route>
-            <Route path="/courses">
-              <Courses />
-            </Route>
-            <Route path="*">
-              <NotFound />
-            </Route>
-          </Switch>
-        </Container>
-        <Footer />
-      </Router>
-    </div>
+    <WishContext.Provider value={wish}>
+      <div>
+        <Router>
+          <Nav />
+          <Container>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/home">
+                <Home />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/courses/:courseId">
+                <CourseDetails />
+              </Route>
+              <Route path="/courses">
+                <Courses />
+              </Route>
+              <Route path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+          </Container>
+          <Footer />
+        </Router>
+      </div>
+    </WishContext.Provider>
   );
 }
 
