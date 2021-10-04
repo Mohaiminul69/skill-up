@@ -4,8 +4,24 @@
 .primaryText {
   color: #6d9886 !important;
 }
+.secondaryText {
+  color: #345b63 !important;
+}
 .bg-offWhite {
   background: #d9cab3;
+}
+.btn-green {
+  background: #6d9886 !important;
+  color: black !important;
+  border: 2px solid rgb(61, 61, 61) !important;
+  font-weight: bold !important;
+}
+.btn-orange {
+  background: #b85c38 !important;
+  background: #e0c097 !important;
+  color: black !important;
+  border: 2px solid rgb(61, 61, 61) !important;
+  font-weight: bold !important;
 }
 body {
   background: #f6f6f6 !important;

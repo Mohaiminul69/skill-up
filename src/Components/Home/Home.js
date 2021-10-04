@@ -6,12 +6,21 @@ import Course from "./../Course/Course";
 import "./home.css";
 
 const Home = () => {
+  /*
+<---------------------------- Useing Custom Hoook ---------------------------->
+*/
   const [courses] = useCourses();
   const [foundCourses, setFoundCourses] = useState([]);
+  /*
+<---------------------------- Filtering Data to New Array ---------------------------->
+*/
   const homeCourses = courses.filter((course) => course.key <= 4);
   const imgSize = "homeImg";
   const handleSearch = (e) => {
     const SearchText = e.target.value;
+    /*
+<---------------------------- Filtering Data to New Array ---------------------------->
+*/
     const matchedCourses = courses.filter((course) =>
       course.name.toLowerCase().includes(SearchText.toLowerCase())
     );
@@ -20,10 +29,13 @@ const Home = () => {
   console.log();
   return (
     <div>
-      <Search courses={courses} handleSearch={handleSearch} />
+      <Search handleSearch={handleSearch} />
+      {/*
+<---------------------------- Conditional Rendering ---------------------------->
+*/}
       {foundCourses.length !== courses.length && foundCourses.length !== 0 && (
         <div>
-          <h2 className="text-success">
+          <h2 className="primaryText">
             Number of Course Found: {foundCourses.length}
           </h2>
           <Row xs={1} sm={1} md={2} lg={2} className="g-3 mt-2">
@@ -33,8 +45,8 @@ const Home = () => {
           </Row>
         </div>
       )}
-      <h2 className="mt-4">Our Popular Courses</h2>
-      <Row xs={1} sm={1} md={2} lg={2} className="g-3 my-4">
+      <h2 className="mt-4 secondaryText">Our Popular Courses</h2>
+      <Row xs={1} sm={1} md={2} lg={2} className="g-3 mt-3 mb-5">
         {homeCourses.map((course) => (
           <Course key={course.key} course={course} imgSize={imgSize} />
         ))}

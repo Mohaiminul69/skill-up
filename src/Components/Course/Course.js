@@ -11,8 +11,8 @@ const Course = (props) => {
       <Card className="customCard">
         <Card.Img variant="top" className={`bg-warning ${imgSize}`} src={img} />
         <Card.Body>
-          <h4 className="fw-bold">{name}</h4>
-          <table className="table text-whitish fw-bold">
+          <h4 className="fw-bold secondaryText">{name}</h4>
+          <table className="table fw-bold">
             <tbody>
               <tr>
                 <td>Intructor:</td>
@@ -31,7 +31,7 @@ const Course = (props) => {
             </tbody>
           </table>
           <Link to={`/courses/${key}`}>
-            <button className="mt-2 btn btn-danger">Details</button>
+            <button className="mt-2 btn btn-orange">View Details</button>
           </Link>
         </Card.Body>
       </Card>

@@ -5,7 +5,7 @@ import "./contact.css";
 const Contact = () => {
   return (
     <div className="custom-height d-flex flex-column justify-content-center mb-5">
-      <h1>Contact Us</h1>
+      <h1 className="secondaryText">Contact Us</h1>
       <h5 className="mt-3 mb-4">
         If you are interested to take our courses, or need more information
         about them, or any other queries, <br /> Please feel free to contact us.
@@ -49,7 +49,7 @@ const Contact = () => {
             feedbackType="invalid"
           />
         </Form.Group>
-        <Button variant="danger" type="submit">
+        <Button className="btn-green" type="submit">
           Submit
         </Button>
       </Form>

@@ -11,7 +11,7 @@ const Search = (props) => {
         aria-describedby="basic-addon2"
         onChange={handleSearch}
       />
-      <Button variant="danger" id="button-addon2">
+      <Button className="btn-green" id="button-addon2">
         Button
       </Button>
     </InputGroup>
