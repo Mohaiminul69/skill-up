@@ -1,3 +1,6 @@
 .homeImg {
   height: 340px;
 }
+h2 {
+  margin-bottom: 0 !important;
+}

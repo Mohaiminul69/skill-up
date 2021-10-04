@@ -8,6 +8,7 @@ import Nav from "./Components/Navbar/Nav";
 import NotFound from "./Components/NotFound/NotFound";
 import "./App.css";
 import CourseDetails from "./Components/CourseDetails/CourseDetails";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
             <Route path="/courses/:courseId">
               <CourseDetails />
