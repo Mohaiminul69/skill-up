@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Basic HTML & CSS",
+    "key": "1",
+    "img": "https://miro.medium.com/max/1400/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "500",
+    "details": "The Course is meant for beginners, it will cover HTML and CSS from basic.",
+    "popular": false
+  },
+  {
+    "name": "JavaScript for Beginners",
+    "key": "2",
+    "img": "https://i.morioh.com/2020/03/25/4abaa0c99507.jpg",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "500",
+    "details": "The Course is meant for beginners, it will cover HTML and CSS from basic.",
+    "popular": false
+  },
+  {
+    "name": "React for Beginners",
+    "key": "3",
+    "img": "https://cdn3.icicletech.com/media/react-logo.png",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "500",
+    "details": "The Course is meant for beginners, it will cover HTML and CSS from basic.",
+    "popular": false
+  },
+  {
+    "name": "UI/UX Design Advanced",
+    "key": "4",
+    "img": "https://live.staticflickr.com/65535/49269602037_eb2063a126_n.jpg",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "700",
+    "details": "The Course is meant for intermidiate, it will cover HTML and CSS from an intermidiate level.",
+    "popular": true
+  },
+  {
+    "name": "React Native for Beginners",
+    "key": "5",
+    "img": "https://i.ytimg.com/vi/Hf4MJH0jDb4/maxresdefault.jpg",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "500",
+    "details": "The Course is meant for beginners, it will cover HTML and CSS from basic.",
+    "popular": false
+  },
+  {
+    "name": "Advanced HTML & CSS",
+    "key": "6",
+    "img": "https://miro.medium.com/max/1400/1*lJ32Bl-lHWmNMUSiSq17gQ.png",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "700",
+    "details": "The Course is meant for intermidiate, it will cover HTML and CSS from an intermidiate level.",
+    "popular": false
+  },
+  {
+    "name": "JavaScript Advanced",
+    "key": "7",
+    "img": "https://i.morioh.com/2020/03/25/4abaa0c99507.jpg",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "700",
+    "details": "The Course is meant for intermidiate, it will cover HTML and CSS from an intermidiate level.",
+    "popular": false
+  },
+  {
+    "name": "React Advanced",
+    "key": "8",
+    "img": "https://cdn3.icicletech.com/media/react-logo.png",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "700",
+    "details": "The Course is meant for intermidiate, it will cover HTML and CSS from an intermidiate level.",
+    "popular": true
+  },
+  {
+    "name": "React Native Advanced",
+    "key": "9",
+    "img": "https://i.ytimg.com/vi/Hf4MJH0jDb4/maxresdefault.jpg",
+    "intructor": "Mushfiq Ali",
+    "duration": "1 Month",
+    "courseFee": "700",
+    "details": "The Course is meant for intermidiate, it will cover HTML and CSS from an intermidiate level.",
+    "popular": false
+  }
+]

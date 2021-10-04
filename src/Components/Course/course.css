@@ -1,0 +1,25 @@
+img {
+  object-fit: cover;
+}
+table {
+  margin-bottom: 0 !important;
+}
+table td:first-child {
+  /* padding-left: 0; */
+  padding-right: 0;
+}
+table td:last-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+table tr:last-child td {
+  border-bottom: none;
+}
+/* .custom-width {
+  width: 50%;
+} */
+.customCard {
+  border-radius: 9px !important;
+  overflow: hidden;
+  background: #dfd8c8 !important;
+}

@@ -1,11 +1,13 @@
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./Components/About/About";
+import Courses from "./Components/Courses/Courses";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Nav from "./Components/Navbar/Nav";
 import NotFound from "./Components/NotFound/NotFound";
-import Services from "./Components/Services/Services";
+import "./App.css";
+import CourseDetails from "./Components/CourseDetails/CourseDetails";
 
 function App() {
   return (
@@ -23,8 +25,11 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/services">
-              <Services />
+            <Route path="/courses/:courseId">
+              <CourseDetails />
+            </Route>
+            <Route path="/courses">
+              <Courses />
             </Route>
             <Route path="*">
               <NotFound />

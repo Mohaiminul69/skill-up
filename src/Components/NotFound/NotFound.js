@@ -8,7 +8,7 @@ const NotFound = () => {
     history.goBack();
   };
   return (
-    <div className="text-center">
+    <div className="text-center pb-5">
       <img style={{ width: "40%" }} src={notFoundImg} alt="" />
       <br />
       <Link to="/home">

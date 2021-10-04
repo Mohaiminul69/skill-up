@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3 py-3">
       <div className="container">
-        <NavLink className="navbar-brand text-danger" to="/home">
-          Online Class
+        <NavLink className="navbar-brand primaryText fw-bold fs-3" to="/home">
+          Skill Up
         </NavLink>
         <button
           className="navbar-toggler"
@@ -32,8 +32,8 @@ const Nav = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services">
-                Services
+              <NavLink className="nav-link" to="/courses">
+                Courses
               </NavLink>
             </li>
           </ul>
