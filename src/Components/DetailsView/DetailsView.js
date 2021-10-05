@@ -24,17 +24,14 @@ const DetailsView = (props) => {
               <td>Duration:</td>
               <td>{duration}</td>
             </tr>
-            <tr>
-              <td>Course Fee:</td>
-              <td>
-                <span>BDT</span> {courseFee}
-              </td>
-            </tr>
           </tbody>
         </table>
         <h5 className="mt-3 mb-2">Desciription</h5>
         <h6>{details}</h6>
-        <button className="mt-3 btn btn-green">Purchase Course</button>
+        <div className="d-flex align-items-center justify-content-between mt-4">
+          <h4 className="text-success mb-0">BDT {courseFee}</h4>
+          <button className="btn btn-green">Purchase Course</button>
+        </div>
         {/* <---------------------- Using Context API ----------------------> */}
         <p className="text-muted mt-2">{wish}</p>
       </Card.Body>

@@ -22,17 +22,14 @@ const Course = (props) => {
                 <td>Duration:</td>
                 <td>{duration}</td>
               </tr>
-              <tr>
-                <td>Course Fee:</td>
-                <td>
-                  <span>BDT</span> {courseFee}
-                </td>
-              </tr>
             </tbody>
           </table>
-          <Link to={`/courses/${key}`}>
-            <button className="mt-2 btn btn-orange">View Details</button>
-          </Link>
+          <div className="d-flex align-items-center justify-content-between">
+            <h4 className="text-success mb-0">BDT {courseFee}</h4>
+            <Link to={`/courses/${key}`}>
+              <button className="mt-2 btn btn-orange">View Details</button>
+            </Link>
+          </div>
         </Card.Body>
       </Card>
     </Col>

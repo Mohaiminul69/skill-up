@@ -38,7 +38,7 @@ const Home = () => {
           <h2 className="primaryText">
             Number of Course Found: {foundCourses.length}
           </h2>
-          <Row xs={1} sm={1} md={2} lg={2} className="g-3 mt-2">
+          <Row xs={1} sm={1} md={2} lg={3} className="g-3 mt-2">
             {foundCourses.map((course) => (
               <Course key={course.key} course={course} imgSize={imgSize} />
             ))}
@@ -46,7 +46,7 @@ const Home = () => {
         </div>
       )}
       <h2 className="mt-4 secondaryText">Our Popular Courses</h2>
-      <Row xs={1} sm={1} md={2} lg={2} className="g-3 mt-3 mb-5">
+      <Row xs={1} sm={1} md={2} lg={3} className="g-3 mt-3 mb-5">
         {homeCourses.map((course) => (
           <Course key={course.key} course={course} imgSize={imgSize} />
         ))}
