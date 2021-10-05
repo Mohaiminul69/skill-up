@@ -12,9 +12,9 @@ const NotFound = () => {
       <img style={{ width: "40%" }} src={notFoundImg} alt="" />
       <br />
       <Link to="/home">
-        <button className="btn btn-danger me-4">Home</button>
+        <button className="btn btn-orange me-4">Home</button>
       </Link>
-      <button onClick={handleBackClick} className="btn btn-danger">
+      <button onClick={handleBackClick} className="btn btn-orange">
         Back
       </button>
     </div>
