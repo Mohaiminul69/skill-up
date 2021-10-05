@@ -4,7 +4,7 @@ import { FormControl, InputGroup, Button } from "react-bootstrap";
 const Search = (props) => {
   const { handleSearch } = props;
   return (
-    <InputGroup className="mb-3">
+    <InputGroup className="my-4 mx-auto w-75">
       <FormControl
         placeholder="Search Course..."
         aria-label="Recipient's username"

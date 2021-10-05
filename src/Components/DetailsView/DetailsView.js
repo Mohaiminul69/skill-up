@@ -10,7 +10,7 @@ const DetailsView = (props) => {
 */
   const wish = useContext(WishContext);
   return (
-    <Card className="customCard w-50 mb-4">
+    <Card className="customCard w-50 my-4">
       <Card.Img className={`bg-warning`} variant="top" src={img} />
       <Card.Body>
         <h2 className="fw-bold mb-2 secondaryText">{name}</h2>
